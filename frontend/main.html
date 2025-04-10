@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreathBloom - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container fade">
+        <header>
+            <h1><i class="fas fa-tree"></i> BreathBloom</h1>
+            <div class="location">
+                <span id="location">Loading...</span>
+            </div>
+            <div class="header-buttons">
+                <button id="theme-toggle"><i class="fas fa-moon"></i> Toggle Theme</button>
+                <button id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                <button id="profile-btn"><i class="fas fa-user"></i> Profile</button>
+            </div>
+        </header>
+
+        <div class="aqi-display">
+            <h2>AQI: <span id="aqi-value">0</span></h2>
+            <p id="aqi-description">Loading...</p>
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+        </div>
+
+        <div class="effects">
+            <h3><i class="fas fa-wind"></i> Effects of AQI</h3>
+            <div id="effects-list"></div>
+        </div>
+
+        <div class="aqi-history">
+            <h3><i class="fas fa-chart-line"></i> AQI History (Last 5 Days)</h3>
+            <canvas id="aqi-history-chart"></canvas>
+        </div>
+
+        <div class="tasks">
+            <h3><i class="fas fa-tasks"></i> Tasks to Improve AQI</h3>
+            <ul id="task-list"></ul>
+            <div class="points">
+                <span>Bloom Points: <span id="bloom-points">0</span></span>
+                <div class="progress-circle" id="points-progress"></div>
+            </div>
+            <div class="badge-progress">
+                <h4>Progress to Next Badge</h4>
+                <div class="progress-bar">
+                    <div id="badge-progress"></div>
+                </div>
+                <p id="badge-progress-text">Loading...</p>
+            </div>
+        </div>
+
+        <div class="leaderboard">
+            <h3><i class="fas fa-trophy"></i> Community Leaderboard</h3>
+            <ul id="leaderboard-list"></ul>
+        </div>
+    </div>
+
+    <div id="task-verification-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2><i class="fas fa-check-circle"></i> Verify Task Completion</h2>
+            <p>Upload a photo or video to prove your eco-action!</p>
+            <input type="file" id="task-media" accept="image/*,video/*" required>
+            <button id="submit-verification"><i class="fas fa-paper-plane"></i> Submit</button>
+        </div>
+    </div>
+
+    <div id="effect-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2 id="effect-title"></h2>
+            <p id="effect-description"></p>
+            <p id="effect-prevention"></p>
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

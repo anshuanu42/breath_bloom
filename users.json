@@ -1,0 +1,39 @@
+[
+    {
+        "email": "mohith@gmail.com",
+        "password": "12",
+        "age": 18,
+        "city": "Mumbai",
+        "bloom_points": 0,
+        "tasks_completed": 0,
+        "badges": [],
+        "rewards": [],
+        "community": "Team Green"
+    },
+    {
+        "email": "23211a1226@gmail.com",
+        "password": "12",
+        "age": 18,
+        "username": "mohith_12",
+        "city": "Hyderabad",
+        "bloom_points": 0,
+        "tasks_completed": 0,
+        "badges": [],
+        "rewards": [],
+        "community": "Team Green",
+        "profile_image": ""
+    },
+    {
+        "email": "23211a1226@bvrit.ac.in",
+        "password": "1234",
+        "age": 19,
+        "username": "mohith_12",
+        "city": "Hyderabad",
+        "bloom_points": 0,
+        "tasks_completed": 0,
+        "badges": [],
+        "rewards": [],
+        "community": "Team Green",
+        "profile_image": ""
+    }
+]
